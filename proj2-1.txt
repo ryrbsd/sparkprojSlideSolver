@@ -1,0 +1,17 @@
+Partner 1 Name:Xiaoyi Cheng
+Partner 1 Login:cs61c-adw
+
+Partner 2 Name:Yiran Rao
+Partner 2 Login:cs61c-aen
+
+1.In this situation we want to keep the all solutions. But when we run our spark solver, we reduced the duplicate solutions on other level, and only remains the one on lowers level. But now we want to keep them, because they are path of one of the solutions.
+
+
+
+2.Use the level as the key, position as value. And reduce same value under same key.
+
+
+
+3.For every position, we want to store the distance to the solution and the possible moves for each peg’s position.
+Changes:1.Use position as key, level as value. Ignored to represent the position, we are going to use the coordinates to represent the position.
+Yes, we need to change the memory requirements of our program. Because there are many possible moves in each level.
